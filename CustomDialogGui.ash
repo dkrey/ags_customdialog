@@ -10,7 +10,7 @@
 //
 // Dependencies:
 //
-//   AGS 3.5 or later
+//   AGS 3.4 or later
 //
 //
 // Usage:
@@ -40,7 +40,6 @@
 //  - The border line thickness is fixed at 1px
 //  - There's no space between the bullets and the dialog text
 //    You have to manage that via transparent pixels
-//  - Arrow highlighting is experimental in AGS < 3.4.0
 //  - For proper alpha channel support, in General settings:
 //    set "sprite alpha rendering style" to "Proper Alpha Blending"
 //    
@@ -77,10 +76,12 @@
 // 1.7    Added: AGS 3.4 support, 
 //        Fixed: removed alpha-channel workaround for AGS >= 3.3
 //
+// 2.0    
+//
 // Licence:
 //
 //   CustomDialogGui AGS script module
-//   Copyright (C) 2008 - 2017 Dirk Kreyenberg
+//   Copyright (C) 2008 - 2022 Dirk Kreyenberg
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to 
