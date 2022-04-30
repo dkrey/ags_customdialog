@@ -645,6 +645,10 @@
             <Number>1</Number>
             <Description IsNull="True" />
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>2</Number>
+            <Description IsNull="True" />
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -2636,6 +2640,160 @@ return
                 <ID>11</ID>
                 <Text xml:space="preserve">(i83,84)Need a gopher repellent?</Text>
                 <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>2</ID>
+            <Name>dDialog3</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+return
+@1
+narrator: &1 Nothing happens.
+return
+@2
+narrator: &1 Nothing happens.
+return
+@3
+narrator: &1 Nothing happens.
+return
+@4
+stop
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Text>(d93,93)New</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Text>(d94,94)Refresh</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Text>(d105,105)Properties</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Text>(d111,111)Close</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>3</ID>
+            <Name>dDialog4</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+return
+@1
+narrator: Trash is empty.
+stop
+@2
+stop
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Text xml:space="preserve">Empty Trash</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Text>Close</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>4</ID>
+            <Name>dDialog5</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+return
+@1
+narrator: Nothing happens.
+return
+@2
+return
+@3
+narrator: Nothing happens.
+return
+@4
+narrator: Nothing happens.
+return
+@5
+narrator: Nothing happens.
+return
+@6
+return
+@7
+narrator: Nothing happens.
+return
+@8
+stop
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Text>New</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Text>---------</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Text>Open</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Text>Edit</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>5</ID>
+                <Text>Properties</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>6</ID>
+                <Text>---------</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>7</ID>
+                <Text>Reboot</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>8</ID>
+                <Text>Close</Text>
+                <Show>True</Show>
                 <Say>False</Say>
               </DialogOption>
             </DialogOptions>
@@ -5562,36 +5720,6 @@ return
                       <ImportAlphaChannel>True</ImportAlphaChannel>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="109" Width="20" Height="40" ColorDepth="32" Resolution="Real" AlphaChannel="False">
-                    <Source>
-                      <FileName>assets/unprop_icon.gif</FileName>
-                      <OffsetX>0</OffsetX>
-                      <OffsetY>0</OffsetY>
-                      <ImportHeight>40</ImportHeight>
-                      <ImportWidth>20</ImportWidth>
-                      <ImportAsTile>False</ImportAsTile>
-                      <Frame>0</Frame>
-                      <RemapToGamePalette>True</RemapToGamePalette>
-                      <RemapToRoomPalette>False</RemapToRoomPalette>
-                      <ImportMethod>TopLeft</ImportMethod>
-                      <ImportAlphaChannel>True</ImportAlphaChannel>
-                    </Source>
-                  </Sprite>
-                  <Sprite Slot="110" Width="20" Height="40" ColorDepth="32" Resolution="Real" AlphaChannel="False">
-                    <Source>
-                      <FileName>assets/unprop_icon_hi.gif</FileName>
-                      <OffsetX>0</OffsetX>
-                      <OffsetY>0</OffsetY>
-                      <ImportHeight>40</ImportHeight>
-                      <ImportWidth>20</ImportWidth>
-                      <ImportAsTile>False</ImportAsTile>
-                      <Frame>0</Frame>
-                      <RemapToGamePalette>True</RemapToGamePalette>
-                      <RemapToRoomPalette>False</RemapToRoomPalette>
-                      <ImportMethod>TopLeft</ImportMethod>
-                      <ImportAlphaChannel>True</ImportAlphaChannel>
-                    </Source>
-                  </Sprite>
                   <Sprite Slot="74" Width="320" Height="200" ColorDepth="32" Resolution="Real" AlphaChannel="False">
                     <Source>
                       <FileName>assets/Roomselect.gif</FileName>
@@ -6159,7 +6287,7 @@ return
                       <RemapToGamePalette>True</RemapToGamePalette>
                       <RemapToRoomPalette>False</RemapToRoomPalette>
                       <ImportMethod>NoTransparency</ImportMethod>
-                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                      <ImportAlphaChannel>False</ImportAlphaChannel>
                     </Source>
                   </Sprite>
                   <Sprite Slot="59" Width="30" Height="30" ColorDepth="32" Resolution="Real" AlphaChannel="False">
@@ -6300,6 +6428,86 @@ return
                       <RemapToRoomPalette>False</RemapToRoomPalette>
                       <ImportMethod>TopRight</ImportMethod>
                       <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+              <SpriteFolder Name="computer">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="75" Width="34" Height="32" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                    <Source>
+                      <FileName>assets/computer.gif</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>32</ImportHeight>
+                      <ImportWidth>34</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>True</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>TopLeft</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="93" Width="18" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                    <Source>
+                      <FileName>assets/filenew.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>16</ImportHeight>
+                      <ImportWidth>18</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>TopLeft</ImportMethod>
+                      <ImportAlphaChannel>False</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="94" Width="18" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                    <Source>
+                      <FileName>assets/reload.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>16</ImportHeight>
+                      <ImportWidth>18</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>TopLeft</ImportMethod>
+                      <ImportAlphaChannel>False</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="105" Width="18" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                    <Source>
+                      <FileName>assets/properties.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>16</ImportHeight>
+                      <ImportWidth>18</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>BottomRight</ImportMethod>
+                      <ImportAlphaChannel>False</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="111" Width="18" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                    <Source>
+                      <FileName>assets/fileclose.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>16</ImportHeight>
+                      <ImportWidth>18</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>TopRight</ImportMethod>
+                      <ImportAlphaChannel>False</ImportAlphaChannel>
                     </Source>
                   </Sprite>
                 </Sprites>

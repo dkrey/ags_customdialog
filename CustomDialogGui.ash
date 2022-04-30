@@ -72,11 +72,12 @@
 // 1.6.1  Fixed: code cleanup, no need to manually import the CDG struct anymore
 // 1.6.2  Added: 32-bit alpha channel support
 // 1.6.3  Fixed: scrolling rooms with semi-transparent backgrounds
-//
 // 1.7    Added: AGS 3.4 support, 
 //        Fixed: removed alpha-channel workaround for AGS >= 3.3
 //
-// 2.0    
+// 1.8    Added: AGS 3.5 support
+//        Removed workaround for pushed down arrows
+//        Bumped min. version to 3.4
 //
 // Licence:
 //
@@ -237,5 +238,3 @@ struct CDG_Arrow {
 };
 
 import CustomDialogGui CDG;
-
-
