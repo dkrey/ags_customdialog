@@ -26,7 +26,7 @@
       <WhenInterfaceDisabled>GreyOut</WhenInterfaceDisabled>
       <GUIAlphaStyle>MultiplyTranslucenceSrcBlend</GUIAlphaStyle>
       <SpriteAlphaStyle>Improved</SpriteAlphaStyle>
-      <RunGameLoopsWhileDialogOptionsDisplayed>False</RunGameLoopsWhileDialogOptionsDisplayed>
+      <RunGameLoopsWhileDialogOptionsDisplayed>True</RunGameLoopsWhileDialogOptionsDisplayed>
       <InventoryHotspotMarkerStyle>Sprite</InventoryHotspotMarkerStyle>
       <InventoryHotspotMarkerSprite>2059</InventoryHotspotMarkerSprite>
       <InventoryHotspotMarkerDotColor>6</InventoryHotspotMarkerDotColor>
@@ -2850,7 +2850,8 @@ return
 @2
 return
 @3
-stop]]></Script>
+stop
+]]></Script>
             <DialogOptions>
               <DialogOption>
                 <ID>1</ID>
@@ -2868,7 +2869,7 @@ stop]]></Script>
                 <ID>3</ID>
                 <Text>Stop</Text>
                 <Show>True</Show>
-                <Say>True</Say>
+                <Say>False</Say>
               </DialogOption>
             </DialogOptions>
           </Dialog>
@@ -2885,6 +2886,9 @@ return
 return
 @3
 stop
+@4
+option-on 2
+return
 ]]></Script>
             <DialogOptions>
               <DialogOption>
@@ -2895,13 +2899,19 @@ stop
               </DialogOption>
               <DialogOption>
                 <ID>2</ID>
-                <Text xml:space="preserve">More Things</Text>
+                <Text xml:space="preserve">More Things  More Things More Things More Things</Text>
                 <Show>True</Show>
                 <Say>True</Say>
               </DialogOption>
               <DialogOption>
                 <ID>3</ID>
                 <Text>Bye</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Text>Secret</Text>
                 <Show>True</Show>
                 <Say>True</Say>
               </DialogOption>
@@ -7423,7 +7433,7 @@ stop
                 <Name>CustomDialogGui</Name>
                 <Description>provides an easy way to customize Dialogs GUIs</Description>
                 <Author>abstauber</Author>
-                <Version>1.8</Version>
+                <Version>1.9</Version>
                 <Key>551174665</Key>
                 <IsHeader>False</IsHeader>
               </Script>
