@@ -2850,6 +2850,7 @@ return
 @2
 return
 @3
+  CallRoomScript(0);
 stop
 ]]></Script>
             <DialogOptions>
@@ -7433,7 +7434,7 @@ return
                 <Name>CustomDialogGui</Name>
                 <Description>provides an easy way to customize Dialogs GUIs</Description>
                 <Author>abstauber</Author>
-                <Version>1.9</Version>
+                <Version>1.8.1</Version>
                 <Key>551174665</Key>
                 <IsHeader>False</IsHeader>
               </Script>

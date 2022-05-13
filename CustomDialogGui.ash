@@ -1,6 +1,6 @@
 // Script header for module 'CustomDialogGui'
 //
-// Version: 1.8
+// Version: 1.8.1
 //
 // Author: Dirk Kreyenberg (abstauber)
 //   Please use the PM function at the AGS forums to contact
@@ -40,8 +40,6 @@
 //  - The border line thickness is fixed at 1px
 //  - There's no space between the bullets and the dialog text
 //    You have to manage that via transparent pixels
-//  - For proper alpha channel support, in General settings:
-//    set "sprite alpha rendering style" to "Proper Alpha Blending"
 //    
 //
 // Revision History
@@ -74,10 +72,12 @@
 // 1.6.3  Fixed: scrolling rooms with semi-transparent backgrounds
 // 1.7    Added: AGS 3.4 support, 
 //        Fixed: removed alpha-channel workaround for AGS >= 3.3
-//
 // 1.8    Added: AGS 3.5 support
 //        Removed workaround for pushed down arrows
 //        Bumped min. version to 3.4
+//
+// 1.8.1  Fixed: Autosize, occasional wrong height calculations
+//        Fixed: Autosize, scaling of the background image
 //
 // Licence:
 //
