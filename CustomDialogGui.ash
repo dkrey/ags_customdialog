@@ -171,6 +171,7 @@ struct CustomDialogGui {
   bool seperator_color;
   bool mousewheel;
   bool reset_scrollstate;
+  
   bool dialog_options_upwards;
   int bg_img; 
   int bg_img_scaling;
@@ -181,6 +182,8 @@ struct CustomDialogGui {
   int text_font;
   int text_color;
   int text_color_active;
+  int text_color_chosen;
+  
   int text_alignment;
   int text_bg;
   int text_bg_xpos;
